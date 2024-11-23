@@ -76,8 +76,8 @@ section {
 
 .interview-image{
   flex: 0 0 300px;
-  will-change: transform, opacity;  /* アニメーションのパフォーマンスを改善 */
-  transform-origin: center center;  /* アニメーションの基準点を中心に */
+  will-change: transform, opacity;  
+  transform-origin: center center;  
 }
 
 .interview-image img{
@@ -86,7 +86,7 @@ section {
   margin-top: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transform: translateZ(0);  /* GPUアクセラレーションを有効に */
+  transform: translateZ(0);  
 }
 
 .qa-pair {
@@ -112,8 +112,8 @@ section {
   background-color: #808080;
 }
 
-.red {
-  background-color: #98524A;
+.blue {
+  background-color: #192f60;
 }
 
 .wine {
