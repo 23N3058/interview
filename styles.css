@@ -4,7 +4,6 @@ h1{
   margin-top: 25%;
   font-family: sans-serif;
   background-color: #808080;
-  width: 100%;
 }
 
 h2{
@@ -126,13 +125,13 @@ section {
 }
 
 .title {
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: bold;
   letter-spacing: 0.1em;
 }
 
 .subtitle {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-style: italic;
   color: #ccc;
 }
