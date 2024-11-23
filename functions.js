@@ -113,7 +113,7 @@ sections.forEach(section => {
 
 const titleAnimation = gsap.timeline({
   defaults: { 
-    duration: prefersReducedMotion.matches ? 0.5 : 2,
+    duration: prefersReducedMotion.matches ? 0.1 : 3,
     ease: "power4.out"
   }
 });
