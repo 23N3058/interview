@@ -72,7 +72,6 @@ section {
   flex: 1;
 }
 
-/* 以下、画像関連のスタイルを改善 */
 .interview-image {
   flex: 0 0 300px;
   will-change: transform, opacity;
