@@ -1,4 +1,4 @@
-h1{
+h1 {
   color: white;
   text-align: center;
   margin-top: 25%;
@@ -6,7 +6,7 @@ h1{
   background-color: #808080;
 }
 
-h2{
+h2 {
   color: white;
   text-align: center;
   margin-bottom: 20px;
@@ -14,7 +14,7 @@ h2{
   background-color: #722F37;
 }
 
-p{
+p {
   color: white;
   text-align: center;
   margin-top: 20px;
@@ -31,8 +31,6 @@ body, html {
   width: 100%;
   background-color: black;
 }
-
-
 
 .box-container {
   overflow: hidden;
@@ -70,23 +68,29 @@ section {
   align-items: flex-start;
 }
 
-.qa-content{
+.qa-content {
   flex: 1;
 }
 
-.interview-image{
+/* 以下、画像関連のスタイルを改善 */
+.interview-image {
   flex: 0 0 300px;
-  will-change: transform, opacity;  
-  transform-origin: center center;  
+  will-change: transform, opacity;
+  transform-origin: center center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.interview-image img{
+.interview-image img {
   width: 100%;
   height: auto;
-  margin-top: 100%;
+  margin-top: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transform: translateZ(0);  
+  transform: translateZ(0);
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
 }
 
 .qa-pair {
@@ -143,62 +147,12 @@ section {
   
   .interview-image {
     flex: 0 0 auto;
-    width: 100%;
-    max-width: 300px;
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-    padding: 1rem;
-    margin-top: 15%;
-  }
-
-  h2 {
-    font-size: 3rem;
-    padding: 0.5rem;
-  }
-
-  .interview-content {
-    padding: 0 15px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .interview-image img {
     margin-top: 20px;
-  }
-
-  .question {
-    font-size: 1.2em;
-    line-height: 1.4;
-  }
-
-  .answer {
-    font-size: 1.5em;
-    line-height: 1.4;
-    margin-left: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.8rem;
-    margin-top: 10%;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  .interview-content {
-    padding: 0 10px;
-  }
-
-  .answer {
-    margin-left: 15px;
-  }
-
-  .qa-pair {
-    margin-bottom: 25px;
+    max-width: 500px;
   }
 }
